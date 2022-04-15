@@ -14,6 +14,7 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animal_tops.css">
 
     <title>Цікаві Тварини</title>
   </head>
@@ -54,40 +55,46 @@
     </nav>
 
     <main class="container">
-      <h1>Зворотний зв'язок</h1>
+      <h1>НайТварини</h1>
 
-      <p>Електронна адреса: admin@animalworld.com</p>
-      <p>
-        Номер телефону 1: +380951225266
-        <br>
-        Номер телефону 2: +380956816801
-      </p>
-
-      <div class="mail" style="width: 45%">
-        <h6>Написати листа:</h6>
-        <form class="needs-validation" class="mb-3" novalidate>
-          <label for="exampleFormControlInput1" class="form-label">Адреса:</label>
-          <input required type="email" minlength="7" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          <div class="invalid-feedback">
-            Спочатку напишіть свою адресу
-          </div>
-        </>
-        <div>
-          <label for="exampleFormControlTextarea1" class="form-label mt-3">Зміст:</label>
-          <textarea 
-            required
-            minlength="10"
-            class="form-control" 
-            id="exampleFormControlTextarea1" 
-            rows="4" 
-            placeholder="Прошу додати до найсильніших тварин мурах-листорізів, бо вони піднімають тяжкості в 30 або 50 разів більші власної ваги. Це перевищує людські можливості в 25 разів!!!"
-          ></textarea>
-          <div class="invalid-feedback">
-            Спочатку напишіть щось. Від 10 символів
-          </div>
-          <button type="submit" class="btn btn-outline-success mt-3">Надіслати</button>
-        </div>
-      </div>
+      <section class="top-list">
+        <a href="animal_tops/the_strongest.html">
+          <article class="top">
+            <img class="top-image" src="../static/images/animal_tops/strongest.jfif" alt="Найсильніші картинка">
+            <h4 class="top-name">Найсильніші</h4>
+          </article>
+        </a>
+        <a href="animal_tops/the_fastest.html">
+          <article class="top">
+            <img class="top-image" src="../static/images/animal_tops/fastest.jfif" alt="Найшвидші картинка">
+            <h4 class="top-name">Найшвидші</h4>
+          </article>
+        </a>
+        <a href="animal_tops/the_biggest.html">
+          <article class="top">
+            <img class="top-image" src="../static/images/animal_tops/biggest.jfif" alt="Найбільші картинка">
+            <h4 class="top-name">Найбільші</h4>
+          </article>
+        </a>
+        <a href="animal_tops/the_dangerous.html">
+          <article class="top">
+            <img class="top-image" src="../static/images/animal_tops/dangerous.jfif" alt="Найнебезпечніші картинка">
+            <h4 class="top-name">Найнебезпечніші</h4>
+          </article>
+        </a>
+        <a href="animal_tops/the_loudest.html">
+          <article class="top">
+            <img class="top-image" src="../static/images/animal_tops/loudest.jfif" alt="Найгучніші картинка">
+            <h4 class="top-name">Найгучніші</h4>
+          </article>
+        </a>
+        <a href="animal_tops/the_smartest.html">
+          <article class="top">
+            <img class="top-image" src="../static/images/animal_tops/smartest.jfif" alt="Найрозумніші картинка">
+            <h4 class="top-name">Найрозумніші</h4>
+          </article>
+        </a>
+      </section>
     </main>
 
     <div class="container">
@@ -99,35 +106,12 @@
         </a>
 
         <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item"><a href="home.html" class="nav-link px-2">Головна сторінка</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link px-2">Головна сторінка</a></li>
           <li class="nav-item"><a href="callback.html" class="nav-link px-2">Зворотний зв'язок</a></li>
           <li class="nav-item"><a href="about_us.html" class="nav-link px-2">Про Нас</a></li>
         </ul>
       </footer>
     </div>
-
-    <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function () {
-        'use strict'
-
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        let forms = document.querySelectorAll('.needs-validation')
-
-        // Loop over them and prevent submission
-        Array.prototype.slice.call(forms)
-          .forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-              if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-              }
-
-              form.classList.add('was-validated')
-            }, false)
-          })
-      })()
-    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
