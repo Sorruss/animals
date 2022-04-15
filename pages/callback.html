@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Цікаві Тварини">
+    <meta name="keywords" content="Тварини, Світ Тварин, Цікаві Тварини">
+    <meta name="author" content="John Doe">
+    <link rel="icon" type="image/png" href="../static/images/logo.jfif"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <title>Цікаві Тварини</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">
+          <img width="30" height="30" class="d-inline-block align-top" src="../static/images/logo.jfif" alt="Цікаві Тварини">
+          Цікаві Тварини
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                НайТварини
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="animal_tops.html">Усі категорії</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="animal_tops/the_strongest.html">Найсильніші</a></li>
+                <li><a class="dropdown-item" href="animal_tops/the_fastest.html">Найшвидші</a></li>
+                <li><a class="dropdown-item" href="animal_tops/the_loudest.html">Найгучніші</a></li>
+                <li><a class="dropdown-item" href="animal_tops/the_smartest.html">Найрозумніші</a></li>
+                <li><a class="dropdown-item" href="animal_tops/the_dangerous.html">Найнебезпечніші</a></li>
+                <li><a class="dropdown-item" href="animal_tops/the_biggest.html">Найбільші</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="amazing_ones.html">Дивовижні</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <h1>Зворотний зв'язок</h1>
+
+      <p>Електронна адреса: admin@animalworld.com</p>
+      <p>
+        Номер телефону 1: +380951225266
+        <br>
+        Номер телефону 2: +380956816801
+      </p>
+
+      <div class="mail" style="width: 45%">
+        <h6>Написати листа:</h6>
+        <form class="needs-validation" class="mb-3" novalidate>
+          <label for="exampleFormControlInput1" class="form-label">Адреса:</label>
+          <input required type="email" minlength="7" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <div class="invalid-feedback">
+            Спочатку напишіть свою адресу
+          </div>
+        </>
+        <div>
+          <label for="exampleFormControlTextarea1" class="form-label mt-3">Зміст:</label>
+          <textarea 
+            required
+            minlength="10"
+            class="form-control" 
+            id="exampleFormControlTextarea1" 
+            rows="4" 
+            placeholder="Прошу додати до найсильніших тварин мурах-листорізів, бо вони піднімають тяжкості в 30 або 50 разів більші власної ваги. Це перевищує людські можливості в 25 разів!!!"
+          ></textarea>
+          <div class="invalid-feedback">
+            Спочатку напишіть щось. Від 10 символів
+          </div>
+          <button type="submit" class="btn btn-outline-success mt-3">Надіслати</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0">&copy; 2021 Company, Inc</p>
+
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="home.html" class="nav-link px-2">Головна сторінка</a></li>
+          <li class="nav-item"><a href="callback.html" class="nav-link px-2">Зворотний зв'язок</a></li>
+          <li class="nav-item"><a href="about_us.html" class="nav-link px-2">Про Нас</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        let forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  </body>
+</html>

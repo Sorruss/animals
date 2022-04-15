@@ -1,0 +1,20 @@
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+
+  transition: all .2s ease-in-out;
+}
+.top-list a:last-child .top {
+  margin-bottom: 0px;
+}
+.top:hover {
+  background-color: #333333;
+  transform: scale(1.1);
+}
+.top-image {
+  margin-right: 50px;
+  height: 100px;
+  width: 140px;
+}

@@ -1,0 +1,21 @@
+body {
+  background-color: #1a1a1a !important;
+  color: white;
+}
+
+a {
+  text-decoration: none !important;
+  color: white;
+  transition: all .1s ease-in;
+}
+a:hover {
+  color: grey;
+}
+
+main.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+main.container h1 {
+  margin-bottom: 30px;
+}
